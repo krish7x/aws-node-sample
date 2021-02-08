@@ -6,6 +6,8 @@ app.get("/", (req,res) => {
     res.send("Hello there!!")
 })
 
-app.listen("80", () => {
-    console.log("server is running at the port 80");
+const PORT = 2000;
+
+app.listen(PORT, () => {
+    console.log(`server is running at the port ${PORT}`);
 })
